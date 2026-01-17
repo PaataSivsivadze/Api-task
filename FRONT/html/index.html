@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie.ge</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container h">
+            <h1 class="logo">🎬 Movie.ge</h1>
+            <nav class="h_nav" id="h_nav">
+                <a href="../html/index.html" class="nav_l">Home</a>
+                <a href="../html/movies.html" class="nav_l">Movies</a>
+                <a href="../html/series.html" class="nav_l">Series</a>
+                <a href="#ftr" class="nav_l" id="contact">Contact</a>
+            </nav>
+
+            <button class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN SLIDER -->
+    <section class="slr">
+        <div class="m_slide" id="m_slide"></div>
+        <button class="slr_btn left" id="m_prev">&#10094;</button>
+        <button class="slr_btn right" id="m_next">&#10095;</button>
+    </section>
+
+     <main>
+         <div class="container">
+
+            <!-- POPULAR MOVIES -->
+            <section class="sec">
+                <h2 class="h2_txt">Popular Movies</h2>
+                <div class="scroll_div">
+                    <button class="scroll_btn left" data-target="popularMovies">&#10094;</button>
+                    <div class="scroll" id="popularMovies"></div>
+                    <button class="scroll_btn right" data-target="popularMovies">&#10095;</button>
+                </div>
+            </section>
+
+            <!-- POPULAR SERIES -->
+            <section class="sec">
+                <h2 class="h2_txt">Popular Series</h2>
+                <div class="scroll_div">
+                    <button class="scroll_btn left" data-target="popularSeries">&#10094;</button>
+                    <div class="scroll" id="popularSeries"></div>
+                    <button class="scroll_btn right" data-target="popularSeries">&#10095;</button>
+                </div>
+            </section>
+
+            <!-- NEWLY ADDED -->
+            <section class="sec">
+                <h2 class="h2_txt">Newly Added</h2>
+                <div class="scroll_div">
+                    <button class="scroll_btn left" data-target="newlyAdded">&#10094;</button>
+                    <div class="scroll" id="newlyAdded"></div>
+                    <button class="scroll_btn right" data-target="newlyAdded">&#10095;</button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="ftr" id="ftr">
+        <div class="container footer">
+            <h4>საიტის შესახებ:</h4>
+            <p>Movie.ge არის ვებ-გვერდი, რომელიც აერთიანებს პოპულარულ ფილმებს და სერიალებს.<br>----------------------------------</p>
+            <h4>საკონტაქტო ინფორმაცია:</h4>
+            <p>მისამართი: თბილისი, საქართველო</p>
+            <p>Email: contact@Movie.ge</p>
+            <p>ტელ: +995 555 123 456</p>
+        </div>
+    </footer>
+    <script src="../JS/main.js"></script>
+    <script src="../JS/burger.js"></script>
+</body>
+</html>
